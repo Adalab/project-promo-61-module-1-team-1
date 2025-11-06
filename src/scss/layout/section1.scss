@@ -1,12 +1,26 @@
 .container-top-destination{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .title{
+        color:#f85e9f;
+        text-align: center;
+        letter-spacing: 0.2rem;
+    }   
     .image{
 
     }
 }
-.title{
-        color:#f85e9f;
-}
+
 .price{
     color:#f85e9f;
+    
+}
+.price,.name{
+    position: relative;
+    right: 9.5rem;
+    margin:1rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
