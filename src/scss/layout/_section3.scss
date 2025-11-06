@@ -1,0 +1,69 @@
+.servicios {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    
+
+&__imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    img {
+        width: 90%;
+        height: auto;
+        
+    }   
+}
+
+&__texto {
+    text-align: center;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.9rem;
+    }
+}
+
+&__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+        &__uno {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 20%;
+                height: auto;
+                background-color: orange;
+                object-fit: contain;
+                padding: 15px;
+                border-radius: 30%;
+                margin-bottom: 10px;
+            }
+
+        }
+
+    }
+    
+
+
+}
+
+}
