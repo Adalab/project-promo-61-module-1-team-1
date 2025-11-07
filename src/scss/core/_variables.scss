@@ -1,23 +1,27 @@
 // COLORS
-$primary-color: ;
-$secondary-color: ;
-$dark-color: ;
-$light-color: ;
+$primary-color: #5d50c6;
+$secondary-color: #f85e9f;
+$dark-color: black;
+$medium-color: #19182580;
+$light-color: white;
 
 //FONTS
 
-$text-font: 'Roboto', 'Helvetica', 'sans-serif';
+$text-font: 'Roboto', 'Arial';
 
 //FONTS-SIZES
 
-$first-title-style: 3rem;
-$second-title-style: 2rem;
-$text-style: 1rem;
-$small-text: 0.8rem;
+$first-title-style: 6.9rem;
+$first-title-style-mobile: 4rem;
+$second-title-style: 4.4rem;
+$third-title-style: 2.3rem;
+$logo-title-style: 2rem;
+$text-style: 1.8rem;
+$small-text: 1.4rem;
 
 //FONT-WEIGHT: 
-$text-weight: 300;
-$title-weight: 900;
+$title-weight: 700;
+$big-weight: 900;
 
 //BREAKPOINTS
 $tablet: 768px;

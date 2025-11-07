@@ -4,7 +4,7 @@ html, body { height: 100%; margin: 0; overflow-x: hidden; }
 *, *::before, *::after { box-sizing: border-box; }
 img { display: block; max-width: 100%; height: auto; }
 
-//Igualar 1px=1rem (o algo así)
+//Igualar 1rem=10px
 body {
   font-size: 62.5%;
 }
