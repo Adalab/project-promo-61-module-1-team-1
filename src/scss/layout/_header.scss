@@ -1,5 +1,138 @@
+@use '../core/variables' as vars;
+
 .page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+    .header__nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        position: sticky;
+
+        .header-nav-bar__logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            gap: 0.8rem;
+            width: 100%;
+            cursor: pointer;
+
+            .logo__img {
+                width: 3rem;
+            }
+
+            .logo__title {
+                font-family: vars.$text-font;
+                font-size: vars.$logo-title-style;
+                font-weight: vars.$big-weight;
+                top: 0;
+                left: 0;
+                margin: 0;         
+            }
+        }
+
+        .header-nav-bar__nav {
+            display: none;
+
+                @media (min-width: vars.$desktop) {
+
+                    display: inline-block;
+                    gap: 0.5rem;
+                    width: 100%;   
+                    
+                    .nav__list {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                        justify-content: end;
+
+                        .nav-list__option {
+                            font-family: vars.$text-font;
+                            font-size: vars.$small-text;
+                        }
+                    }
+                }
+        }
+
+        .header__hamburger {
+            top: 0;
+            right: 0;
+            margin: 0;        
+            border: 0;
+            cursor: pointer;
+
+            @media (min-width: vars.$desktop) {
+                display: none;
+            }
+
+            .hamburger__img {
+                width: 4rem;
+            }
+        }
+
+    }
+
+    .header__hero {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .header-hero__title {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+            .hero-title__title {
+                font-family: vars.$text-font;
+                font-size: vars.$first-title-style-mobile;
+                font-weight: vars.$big-weight;
+                color: vars.$dark-color;
+                text-align: center;
+
+                @media (min-width: vars.$desktop) {
+                    text-align: left;
+                }
+                
+                    .title__pink {
+                        color: vars.$secondary-color;
+                    }
+            }
+
+            .button {
+                width: 100%;
+
+                @media (min-width: vars.$desktop) {
+                    width: 40%;
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+            }
+
+        }
+
+        @media (min-width: vars.$desktop) {
+            display: flex;
+            flex-direction: row;
+            width: 100%;   
+            
+        }
+    }
 }
