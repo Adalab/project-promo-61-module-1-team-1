@@ -17,13 +17,13 @@
     
     img {
         width: 90%;
-        max-width: 43rem;
+        max-width: 23.68rem;
         height: auto;
         
     }   
 }
 
-&__texto {
+&__titular {
     text-align: center;
     margin-bottom: 1rem;
 
@@ -132,4 +132,116 @@
 
 }
 
+
 }
+
+//tablet
+
+@media all and (min-width: vars.$tablet) {
+    .servicios {
+        display: grid;
+        margin: 2rem 0.62rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+
+
+        &__titular {
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 2.5rem;
+        text-align: left;
+        margin-bottom: 0;
+        // margin-bottom: 1rem;
+
+        h2 {
+            margin: 0;
+        }
+
+        }
+
+        &__contenido {
+
+            .card {
+                max-width: 50rem; 
+
+                img {
+                    margin-bottom: 0
+                }
+               
+               &__uno {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1.5rem;
+               
+                .textoint {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 0.5rem;
+
+                      p {
+                    margin: 0;
+                    }
+                }
+              
+               }
+
+               &__dos {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1.5rem;
+               
+                .textoint {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 0.5rem;
+
+                      p {
+                    margin: 0;
+                    }
+                }
+               }
+
+               &__tres {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1.5rem;
+               
+                .textoint {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 0.5rem;
+
+                      p {
+                    margin: 0;
+                    }
+                }
+               }
+
+            }
+
+
+        }
+
+         &__imagen {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+        }
+
+    }
+}
+
+//desktop
