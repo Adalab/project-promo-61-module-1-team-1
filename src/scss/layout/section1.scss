@@ -27,12 +27,12 @@
     }
 }
 
-.price{
+.from{
     color: vars.$secondary-color;
 }
-.container-img-price{
+.container-img-from{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     position: relative;
     right: 9.5rem;
     margin:1rem;
@@ -40,7 +40,9 @@
     font-size: 1rem;
 
                 @media (min-width: vars.$desktop){
-                    display:inline-flex;
+                    display:flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
                     gap:3rem;
                     right: 0;
                 }
