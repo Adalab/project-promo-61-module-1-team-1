@@ -1,19 +1,23 @@
+@use '../core/variables' as vars;
+
 .servicios {
     // box-sizing: content-box;
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 20px;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
     
 
 &__imagen {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     
     img {
         width: 90%;
+        max-width: 43rem;
         height: auto;
         
     }   
@@ -21,19 +25,21 @@
 
 &__texto {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
 
     p {
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
-        color: #F85E9F;
+        color: vars.$secondary-color;
         font-weight: 700;
-        padding-bottom: 10px;
+        padding-bottom: 0.5rem;
+        margin: 0;
     }
 
     h2 {
         font-family: 'Roboto', sans-serif;
         font-size: 2.4rem;
+        margin: 0.75rem;
     }
 }
 
@@ -41,20 +47,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 2rem;
 
     .card {
         display: flex;
         flex-direction: column;
         justify-content: left;
         box-sizing: border-box;
-        max-width: 400px; 
-        margin-bottom: 40px;
+        max-width: 25rem; 
+        margin-bottom: 2.5rem;
         
         h4 {
             font-family: 'Roboto', sans-serif;
             font-size: 1.15rem;
             font-weight: 900;
-            padding: 10px 0;
+            padding: 0.31rem 0;
+            margin: 0;
             }
 
         p {
@@ -68,16 +76,16 @@
             display: flex;
             flex-direction: column;
             padding-left: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
 
             img {
                 width: 5rem;
                 height: auto;
                 background-color: #FF5722;
                 object-fit: contain;
-                padding: 16px;
+                padding: 1rem;
                 border-radius: 30%;
-                margin-bottom: 10px;
+                margin-bottom: 0.62rem;
             }
 
         }
@@ -86,35 +94,35 @@
             display: flex;
             flex-direction: column;
             border: 1.2px solid lightgray;
-            border-radius: 25px;
-            padding: 25px;
-            margin-bottom: 40px;
+            border-radius: 1.56rem;
+            padding: 1.56rem;
+            margin-bottom: 2.5rem;
 
             img {
                 width: 5rem;
                 height: auto;
                 background-color: #FACD49;
                 object-fit: contain;
-                padding: 16px;
+                padding: 1rem;
                 border-radius: 30%;
-                margin-bottom: 10px;
+                margin-bottom: 0.62rem;
             }
         }
 
         &__tres {
             display: flex;
             flex-direction: column;
-            padding-left: 25px;
-            margin-bottom: 40px;
+            padding-left: 1.56rem;
+            margin-bottom: 2.5rem;
 
             img {
                 width: 5rem;
                 height: auto;
                 background-color: #F85E9F;
                 object-fit: contain;
-                padding: 16px;
+                padding: 1rem;
                 border-radius: 30%;
-                margin-bottom: 10px;
+                margin-bottom: 0.62rem;
             }
         }
 
