@@ -5,9 +5,10 @@
      
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             padding: 10px;
             left: 20px;
+            padding-right: 2.5rem;
             
 
 }
@@ -37,9 +38,13 @@
 }
 
 .statscontainer {
+
                 display: grid;
                 grid-template-columns: (1fr 1fr);
-        
+                grid-auto-rows: 5rem;
+                margin: 5%;
+                gap: 1rem;
+               
 
 }
 
@@ -77,6 +82,7 @@
             font-size: 18px;
             font-weight: normal;
             letter-spacing: normal;
+
             
           
 
@@ -120,21 +126,18 @@
             height: 10px;
             font-family: vars.$text-font;
             font-size: 18px;
-            font-weight: normal;
-            letter-spacing: normal;
-            
-            
-
+            font-weight: normal;   
 
 }
 
 
+.hidetext {
+
+             @media (max-width: vars.$desktop) {
+
+            display: none;
 
 
-    @media (min-width: vars.$desktop){
-
-            
-
-
-    
+    }
+              
 }
