@@ -1,6 +1,61 @@
 @use '../core/variables' as vars;
 
 .page__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
 
-    
-}
+    .footer__logos {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 60%;
+            padding: 1rem;
+
+        .logo__img {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            gap: 1rem;
+            
+
+                .logo-img__img {
+                    display: flex;
+                    justify-content: left;
+                    width: 2rem;
+                }
+
+                .logo__title {
+                font-family: vars.$text-font;
+                font-size: vars.$footer-text;
+                font-weight: vars.$big-weight;
+       
+            }
+        }
+
+
+
+            .footer-logos__ssnn {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                width: 60%;
+                cursor: pointer;
+                gap: 0.8rem;
+
+            
+                .logos-ssnn__img {
+                    width: 2rem;
+                    filter: brightness(0) saturate(100%) invert(31%) sepia(29%) 
+        saturate(1248%) hue-rotate(223deg) brightness(90%) contrast(110%);
+                }
+            }
+        }
+
+        .footer__nav {
+            display: none;
+        }
+
+    } 
