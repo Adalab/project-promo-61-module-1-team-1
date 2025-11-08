@@ -36,8 +36,14 @@
 
 }
 
+.statscontainer {
+                display: grid;
+                grid-template-columns: (1fr 1fr);
+        
 
-.stats-container { 
+}
+
+.firstcard { 
             
             height: 151px;
             width: 185px;
@@ -71,7 +77,7 @@
             font-size: 18px;
             font-weight: normal;
             letter-spacing: normal;
-            text-align: left;
+            
           
 
 
@@ -110,13 +116,13 @@
 .hotel {
 
 
-            width: 61px;
+            width: 66xpx;
+            height: 10px;
             font-family: vars.$text-font;
             font-size: 18px;
-            gap: 1px;
             font-weight: normal;
             letter-spacing: normal;
-            text-align: left;
+            
             
 
 
