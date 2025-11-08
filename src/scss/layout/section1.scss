@@ -1,26 +1,47 @@
+@use '../core/variables' as vars;
+
 .container-top-destination{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+   
     .title{
-        color:#f85e9f;
+        color: vars.$secondary-color;
+        font-size: 1rem;
         text-align: center;
         letter-spacing: 0.2rem;
-    }   
-    .image{
 
+                @media (min-width: vars.$desktop){
+                    text-align: left;
+                    font-size: 1.5rem;
+                    margin: 2.5rem;
+                }
+    }   
+    .container-image{
+
+                 @media (min-width: vars.$desktop){
+                    display:flex;
+                    flex-direction: row;
+                }
     }
 }
 
 .price{
-    color:#f85e9f;
-    
+    color: vars.$secondary-color;
 }
-.price,.name{
+.container-img-price{
+    display: flex;
+    flex-direction: row-reverse;
     position: relative;
     right: 9.5rem;
     margin:1rem;
     font-weight: bold;
     font-size: 1rem;
+
+                @media (min-width: vars.$desktop){
+                    display:inline-flex;
+                    gap:3rem;
+                    right: 0;
+                }
 }
