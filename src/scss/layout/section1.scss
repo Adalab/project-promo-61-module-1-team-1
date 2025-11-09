@@ -42,7 +42,8 @@
     font-weight: bold;
     font-size: 1rem;
 
-                @media (min-width: vars.$tablet),(min-width: vars.$desktop){
+                @media (min-width: vars.$tablet),
+                        (min-width: vars.$desktop){
                     display:flex;
                     flex-direction: row-reverse;
                     justify-content: center;
