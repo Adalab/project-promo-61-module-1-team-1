@@ -22,16 +22,22 @@
     }   
     .container-image{
 
-                 @media (min-width: vars.$tablet), 
-                        (min-width: vars.$desktop){
-                    display:flex;
-                    flex-direction: row;
-                }
+        @media (min-width: vars.$tablet){ 
+            display:flex;
+            flex-direction: row;
+        } 
+        @media (min-width: vars.$desktop){
+            display:flex;
+            flex-direction: row;
+        }
     }
 }
 
-.from{
-    color: vars.$secondary-color;
+.image{
+    @media(min-width: vars.$tablet){
+        display:flex;
+        flex-wrap: wrap;
+    }
 }
 .container-img-from{
     display: flex;
@@ -42,27 +48,30 @@
     font-weight: bold;
     font-size: 1rem;
 
-                @media (min-width: vars.$tablet),
-                        (min-width: vars.$desktop){
-                    display:flex;
-                    flex-direction: row-reverse;
-                    justify-content: center;
-                    gap:5rem;
-                    right: 0;
-                }
+        @media (min-width: vars.$tablet),
+            (min-width: vars.$desktop){
+            display:flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            gap:5rem;
+            right: 0;
+        }
+    .from{
+        color: vars.$secondary-color;
+    }
 }
 
-.mallorca{
-  width: 24rem;
-  height: 30rem;         
-  object-fit: cover; 
-  border-radius: 1.25rem 1.25rem 0 0;
-  display: block;
+.lucena, .mallorca, .gijon, .sevilla{
+    width: 24rem;
+    height: 30rem;         
+    object-fit: cover; 
+    border-radius: 1.25rem 1.25rem 0 0;
+    display: block;
 
-                @media(min-width: vars.$tablet){
-                    height: 17.5rem;
-                }
-                @media(min-width: vars.$desktop){
-                    height: 21rem;
-                }
+            @media(min-width: vars.$tablet){
+                height: 17.5rem;   
+            }
+            @media(min-width: vars.$desktop){
+                height: 21rem;
+            }
 }
