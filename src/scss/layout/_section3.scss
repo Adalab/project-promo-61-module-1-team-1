@@ -136,7 +136,7 @@
         margin: 2rem 0.62rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
-        gap: 1rem;
+        gap: 1.2rem;
 
 
         &__titular {
@@ -144,9 +144,8 @@
         grid-row: 1;
         padding-left: 2.5rem;
         text-align: left;
-        margin-bottom: 0;
-        // margin-bottom: 1rem;
-
+        margin-bottom: 1rem;
+        
         p {
             font-size: 1.2rem;
         }
@@ -184,8 +183,6 @@
                 .dibujo {
                     width: 6rem;
                     height: 6rem;
-                    // display: inline-flex;
-                    // object-fit: contain;
                     align-items: center;
                     justify-content: center;
 
@@ -196,16 +193,6 @@
                         
                     }
                 }
-
-                // .imagen {
-                //     margin-bottom: 0;
-                //     width: 5.6rem;
-                //     height: auto;
-                //     object-fit: contain;
-                //     padding: 1rem;
-                //     border-radius: 30%;
-                //     // margin-bottom: 0rem;
-                // }
                
             &__uno {
                 display: grid;
@@ -253,9 +240,92 @@
 
 //desktop
 @media all and (min-width: vars.$desktop) {
+   .servicios {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+        
+        &__titular {
+        padding-left: 3.5rem;
+        margin-bottom: 2rem;
+        
+            p {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 2.8rem;
+                margin: 0;
+            }
+
+        }
+
+        &__contenido {
+
+            .card {
+                max-width: 50rem; 
+
+                .textoint {
+                    // margin-left: 0px;
+
+                        h4 {
+                        font-size: 1.3rem;
+                        margin: 0rem 0;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            margin: 0;
+                        }
+
+                }
+                
+                .dibujo {
+                    width: 6.5rem;
+                    height: 6.5rem;
+
+                }
+
+               
+            &__uno {
+                grid-template-columns: 0.65fr 2.35fr;
+                margin-bottom: 1.75rem;
+                                          
+               }
+
+            &__dos {
+                grid-template-columns: 0.65fr 2.35fr;
+                margin-bottom: 1.75rem;
+               
+               }
+
+            &__tres {
+                grid-template-columns: 0.65fr 2.35fr;
+                margin-bottom: 1.75rem;
+               
+               }
+
+            }
 
 
+        }
 
+        &__imagen {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            
+            img {
+                width: auto;
+                height: auto;
+                object-fit: cover;
+                overflow: visible;
+                
+            }
 
-    
+        }
+
+    }
 }
+
+
+
+
