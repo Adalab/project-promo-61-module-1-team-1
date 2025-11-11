@@ -5,12 +5,28 @@
     display: inline-block;
     padding: 1rem 3rem;
     border-radius: 10rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    appearance: none;
+    box-shadow:  0 0 0.4rem grey;
     background-color: vars.$primary-color;
     font-family: vars.$text-font;
-    font-size: 1rem;;
+    font-size: 1rem;
     text-align: center;
     align-items: center;
     color: vars.$light-color;
     cursor: pointer;
+
+    &:hover {
+        background-color: lighten(vars.$primary-color, 5%);
+        transform: translateY(-0.2rem);
+        }
+
+    &:active {
+        transform: translateY(0);
+        }
+
+    &:focus {
+        outline: none;
+        }
 }

@@ -18,40 +18,43 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 0.5rem;
         width: 100%;
         position: sticky;
-        cursor: pointer;
+        top: 0;
+        background-color: white;
 
-        
 
         .header-nav-bar__logo {
             display: flex;
             flex-direction: row;
             justify-content: left;
-            align-items: center;
-            gap: 0.8rem;
+            cursor: pointer;
             width: 100%;
 
-
-            .logo__img {
-                width: 3rem;
-            }
-
             .logo__title {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                align-items: center;
+                gap: 0.8rem;
+                color: vars.$dark-color;
                 font-family: vars.$text-font;
-                font-size: vars.$logo-title-style;
+                font-size: vars.$text-style;
                 font-weight: vars.$big-weight;
                 top: 0;
                 left: 0;
                 margin: 0;
 
-                &:hover {
-                    color: vars.$primary-color;
-                    transition: color 0.3s ease;
-                    }
-                
-                
+            .logo__img {
+                width: 3rem;
+                margin-left: 0.3rem;
+            }
+
+            &:hover {
+                color: vars.$primary-color;
+                transition: color 0.3s ease;
+                }
             }
         }
 
@@ -93,10 +96,10 @@
         }
 
         .header__hamburger {
-            top: 0;
-            right: 0;
-            margin: 0;        
-            border: 0;
+            top: 0; 
+            right: 0; 
+            margin: 0; 
+            border: 0; 
             cursor: pointer;
 
             @media (min-width: vars.$desktop) {
@@ -174,7 +177,7 @@
 
                 @media (min-width: vars.$desktop) {
                     width: 40%;
-                    margin-left: 0;
+                    margin-left: 0.5rem;
                     margin-right: auto;
                 }
             }
