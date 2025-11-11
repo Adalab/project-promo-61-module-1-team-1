@@ -13,7 +13,6 @@
 
 }
 
-
 .travel {
 
             font-family: vars.$text-font;
@@ -42,9 +41,10 @@
                 display: grid;
                 grid-template-columns: (1fr 1fr);
                 grid-auto-rows: 5rem;
-                margin: 5%;
+                margin-right: 5%;
                 gap: 1rem;
                
+                
 
 }
 
@@ -60,11 +60,8 @@
             border-radius: 32px;
             border: 1px solid #1918251A;
             background-color: #fff;
-            
-}
 
-
-.number1 {
+      .number1 {
 
             width: 80px;
             height: 42px;
@@ -74,7 +71,12 @@
             text-align: left;
             color: #ff5722;
 
+
+            
+    }
 }
+
+
 
 .party {
             margin-top: -15%;
@@ -92,6 +94,7 @@
 
             height: 151px;
             width: 185px;
+            margin-right: 10rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -100,7 +103,6 @@
             border-radius: 32px;
             border: 1px solid #1918251A;
             background-color: #fff;
-
 
 
 }
@@ -129,14 +131,25 @@
 
 }
 
+//mobile first//
 
 .hidetext {
 
              @media (max-width: vars.$desktop) {
 
-            display: none;
-
-
+              display: none;
+              
+            
     }
               
 }
+
+//tablet//
+
+  .img{
+            @media (min-width: vars.$tablet) {
+
+                 
+
+            }
+} 
