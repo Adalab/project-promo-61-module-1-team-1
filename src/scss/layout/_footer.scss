@@ -93,7 +93,14 @@
             .footer-nav__items {
                 font-family: vars.$text-font;
                 font-size: vars.$footer-text;
-                letter-spacing: 0.05em; 
+                letter-spacing: 0.05em;
+                cursor: pointer;
+                
+                &:hover {
+                    color: vars.$secondary-color;
+                    transition: color 0.3s ease;
+                    transform: scale(1.1);
+                    }
                 }
             }
         
