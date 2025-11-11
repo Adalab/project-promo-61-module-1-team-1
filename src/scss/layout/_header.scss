@@ -6,6 +6,11 @@
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
+
+     @media (min-width: vars.$desktop) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+     }
   
     .header__nav-bar {
         display: flex;
@@ -13,30 +18,43 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 0.5rem;
         width: 100%;
         position: sticky;
+        top: 0;
+        background-color: white;
+
 
         .header-nav-bar__logo {
             display: flex;
             flex-direction: row;
             justify-content: left;
-            align-items: center;
-            gap: 0.8rem;
-            width: 100%;
             cursor: pointer;
-
-            .logo__img {
-                width: 3rem;
-            }
+            width: 100%;
 
             .logo__title {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                align-items: center;
+                gap: 0.8rem;
+                color: vars.$dark-color;
                 font-family: vars.$text-font;
-                font-size: vars.$logo-title-style;
+                font-size: vars.$text-style;
                 font-weight: vars.$big-weight;
                 top: 0;
                 left: 0;
-                margin: 0;         
+                margin: 0;
+
+            .logo__img {
+                width: 3rem;
+                margin-left: 0.3rem;
+            }
+
+            &:hover {
+                color: vars.$primary-color;
+                transition: color 0.3s ease;
+                }
             }
         }
 
@@ -52,22 +70,36 @@
                     .nav__list {
                         display: flex;
                         flex-direction: row;
-                        gap: 1rem;
+                        gap: 4rem;
                         justify-content: end;
 
-                        .nav-list__option {
+                        .nav-list__option, .option__link {
                             font-family: vars.$text-font;
                             font-size: vars.$small-text;
+                            color: vars.$medium-color;
+                            font-weight: vars.$title-weight;
+                            text-decoration: none;
+                            
+                            &:hover {
+                                color: vars.$dark-color;
+                                transition: color 0.3s ease;
+                                transform: scale(1.1);
+                            }
+
+                             &:visited {
+                                color: vars.$medium-color; 
+                            }
+
                         }
                     }
                 }
         }
 
         .header__hamburger {
-            top: 0;
-            right: 0;
-            margin: 0;        
-            border: 0;
+            top: 0; 
+            right: 0; 
+            margin: 0; 
+            border: 0; 
             cursor: pointer;
 
             @media (min-width: vars.$desktop) {
@@ -91,14 +123,37 @@
         justify-content: center;
         align-items: center;
 
+            @media (min-width: vars.$desktop) {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+                .header-hero__img {
+                    width: 50rem;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+
+                    .hero-img__img {
+                        display: inline-block;
+                        right: 0;
+                        }
+                    }
+                }
+
+        
+
         .header-hero__title {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-
 
             .hero-title__title {
                 font-family: vars.$text-font;
@@ -116,23 +171,19 @@
                     }
             }
 
+
             .button {
-                width: 100%;
+                width: 90%;
 
                 @media (min-width: vars.$desktop) {
                     width: 40%;
-                    margin-left: 0;
+                    margin-left: 0.5rem;
                     margin-right: auto;
                 }
             }
 
         }
 
-        @media (min-width: vars.$desktop) {
-            display: flex;
-            flex-direction: row;
-            width: 100%;   
-            
-        }
     }
+
 }
