@@ -218,11 +218,13 @@
   color: vars.$primary-color;
 }
 
-.page:has(#topdestinos:target) .option__link[href="#topdestinos"] {
+.page:has(#top-destinos:target) 
+.option__link[href="section1.html#top-destinos"] {
   font-weight: vars.$big-weight;
   color: vars.$primary-color;
 }
 
-.page:has(#topdestinos:target) .option__link[href="#topdestinos"]:visited {
+.page:has(#top-destinos:target) 
+.option__link[href="section1.html#top-destinos"]:visited {
   color: vars.$primary-color;
 }
