@@ -194,21 +194,20 @@
 
 }
 
+
 .page .header__nav-bar .header-nav-bar__nav .nav__list
-.option__link[href="./index.html"] {
+.option__link[href$="index.html"] {
   font-weight: vars.$big-weight;
   color: vars.$primary-color;
 }
-
 
 .page .header__nav-bar .header-nav-bar__nav .nav__list
 .option__link[href$="index.html"]:visited {
   color: vars.$primary-color;
 }
 
-
 .contact .header__nav-bar .header-nav-bar__nav .nav__list
-.option__link[href="./contact.html"] {
+.option__link[href$="contact.html"] {
   font-weight: vars.$big-weight;
   color: vars.$primary-color;
 }
@@ -218,13 +217,19 @@
   color: vars.$primary-color;
 }
 
-.page:has(#top-destinos:target) 
-.option__link[href="section1.html#top-destinos"] {
+.contact .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="contact.html"] {
   font-weight: vars.$big-weight;
   color: vars.$primary-color;
 }
 
-.page:has(#top-destinos:target) 
-.option__link[href="section1.html#top-destinos"]:visited {
+.ciudades .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="#top-destinos"] {
+  font-weight: vars.$big-weight;
+  color: vars.$primary-color;
+}
+
+.ciudades .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="#top-destinos"]:visited {
   color: vars.$primary-color;
 }
