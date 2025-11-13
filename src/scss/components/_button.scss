@@ -18,7 +18,6 @@
     cursor: pointer;
 
     &:hover {
-        background-color: lighten(vars.$primary-color, 5%);
         transform: translateY(-0.2rem);
         }
 

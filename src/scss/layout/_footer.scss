@@ -8,7 +8,7 @@
     padding: 2rem;
     gap: 1rem;
     
-    @media (min-width: vars.$desktop) {
+    @media (min-width: vars.$tablet) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -16,6 +16,12 @@
             padding-left: 4rem;
             padding-right: 4rem;
     }
+
+
+    @media (min-width: vars.$desktop) {
+        inline-size: min(100%, 1000rem); 
+        margin-inline: auto;
+        }
 
     .footer__logos {
             display: flex;
@@ -95,6 +101,14 @@
                 font-size: vars.$footer-text;
                 letter-spacing: 0.05em;
                 cursor: pointer;
+
+                .nav-items__items {
+                    text-decoration: none;
+                    }
+
+                &:visited {
+                    color: vars.$medium-color; 
+                    }
                 
                 &:hover {
                     color: vars.$secondary-color;

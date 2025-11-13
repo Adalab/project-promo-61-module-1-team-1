@@ -7,10 +7,15 @@
     padding-left: 1rem;
     padding-right: 1rem;
 
-     @media (min-width: vars.$desktop) {
-        padding-left: 10rem;
-        padding-right: 10rem;
-     }
+     @media (min-width: vars.$tablet) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        }
+
+    @media (min-width: vars.$desktop) {
+        inline-size: min(100%, 1000rem); 
+        margin-inline: auto;
+        }
   
     .header__nav-bar {
         display: flex;
@@ -61,7 +66,7 @@
         .header-nav-bar__nav {
             display: none;
 
-                @media (min-width: vars.$desktop) {
+                @media (min-width: vars.$tablet) {
 
                     display: inline-block;
                     gap: 0.5rem;
@@ -84,13 +89,13 @@
                                 color: vars.$dark-color;
                                 transition: color 0.3s ease;
                                 transform: scale(1.1);
-                            }
+                                }
 
                              &:visited {
                                 color: vars.$medium-color; 
-                            }
-
+                                }
                         }
+
                     }
                 }
         }
@@ -102,7 +107,7 @@
             border: 0; 
             cursor: pointer;
 
-            @media (min-width: vars.$desktop) {
+            @media (min-width: vars.$tablet) {
                 display: none;
             }
 
@@ -123,7 +128,7 @@
         justify-content: center;
         align-items: center;
 
-            @media (min-width: vars.$desktop) {
+            @media (min-width: vars.$tablet) {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
@@ -153,7 +158,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
 
             .hero-title__title {
                 font-family: vars.$text-font;
@@ -162,7 +167,7 @@
                 color: vars.$dark-color;
                 text-align: center;
 
-                @media (min-width: vars.$desktop) {
+                @media (min-width: vars.$tablet) {
                     text-align: left;
                 }
                 
@@ -174,8 +179,9 @@
 
             .button {
                 width: 90%;
+                text-decoration: none;
 
-                @media (min-width: vars.$desktop) {
+                @media (min-width: vars.$tablet) {
                     width: 40%;
                     margin-left: 0.5rem;
                     margin-right: auto;
@@ -186,4 +192,44 @@
 
     }
 
+}
+
+
+.page .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="index.html"] {
+  font-weight: vars.$big-weight;
+  color: vars.$primary-color;
+}
+
+.page .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="index.html"]:visited {
+  color: vars.$primary-color;
+}
+
+.contact .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="contact.html"] {
+  font-weight: vars.$big-weight;
+  color: vars.$primary-color;
+}
+
+.contact .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="contact.html"]:visited {
+  color: vars.$primary-color;
+}
+
+.contact .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="contact.html"] {
+  font-weight: vars.$big-weight;
+  color: vars.$primary-color;
+}
+
+.ciudades .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="#top-destinos"] {
+  font-weight: vars.$big-weight;
+  color: vars.$primary-color;
+}
+
+.ciudades .header__nav-bar .header-nav-bar__nav .nav__list
+.option__link[href$="#top-destinos"]:visited {
+  color: vars.$primary-color;
 }
